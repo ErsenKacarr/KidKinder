@@ -1,0 +1,310 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Templates/material_able-main/assets/css/font-awesome-n.min.css">
+
+<body>
+                        
+                        <div class="pcoded-inner-content">
+                           
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    
+                                    <div class="page-body">
+                                        <div class="row">
+                                            
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-user text-c-purple f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.ResimCizmeCount</h5>
+                                                                        <p class="text-muted m-b-0">Resim Öğretmeni</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-volume-down text-c-green f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.BasitYazılımDilleriCount</h5>
+                                                                        <p class="text-muted m-b-0">Yazılım Dilleri Öğretmeni</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-file-alt text-c-red f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.Matematik</h5>
+                                                                        <p class="text-muted m-b-0">Matematik Öğretmeni</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-envelope-open text-c-blue f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.FransızcaCount</h5>
+                                                                        <p class="text-muted m-b-0">Fransızca Öğretmeni</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-share-alt text-c-purple f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.TemelBilimlerSınıfıCount</h5>
+                                                                        <p class="text-muted m-b-0">Temel Bilimler Sınıf Sayısı</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-sitemap text-c-green f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.ÇizimSınıfıCount</h5>
+                                                                        <p class="text-muted m-b-0">Çizim Sınıf Sayısı</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-signal text-c-red f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>>@ViewBag.DilSınıfıCount</h5>
+                                                                        <p class="text-muted m-b-0">Yabancı Dil Sınıf Sayısı</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-wifi text-c-blue f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>@ViewBag.TeacherCount</h5>
+                                                                        <p class="text-muted m-b-0">Toplam Öğretmen Sayımız</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-clr-stat-card text-white green ">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-green">
+                                                                <i class="fas fa-star mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>@ViewBag.AvgPrice</h5>
+                                                                <p class="m-b-0">Ortalama Fiyat</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mat-clr-stat-card text-white blue">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-blue">
+                                                                <i class="fas fa-trophy mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>@ViewBag.Price</h5>
+                                                                <p class="m-b-0">Sınıfların Toplam Fiyatı</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="card table-card">
+                                                    <div class="card-header">
+                                                        <h5>Member’s performance</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-trash close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover m-b-0 without-header">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="~/Templates/material_able-main/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Shirley Hoe</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$78.001<i class="fas fa-level-down-alt text-c-red m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="~/Templates/material_able-main/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>James Alexander</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="~/Templates/material_able-main/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Shirley Hoe</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="~/Templates/material_able-main/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Nick Xander</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="row">
+                                                    
+
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0"></h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class=""></i>@ViewBag.NotificationCount</h4>
+                                                                <p class="m-b-0">Gelen Mailler</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0"></h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class=""></i>@ViewBag.GalleryCount</h4>
+                                                                <p class="m-b-0">Galerimizdeki Resimler</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-c-red total-card">
+                                                            <div class="card-block">
+                                                                <div class="text-left">
+                                                                    <h4>@ViewBag.ServiceCount</h4>
+                                                                    <p class="m-0">Hizmetlerimiz</p>
+                                                                </div>
+                                                                <span class="label bg-c-red value-badges"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-c-green total-card">
+                                                            <div class="card-block">
+                                                                <div class="text-left">
+                                                                    <h4>@ViewBag.TestimonialCount</h4>
+                                                                    <p class="m-0">Referanslarımız</p>
+                                                                </div>
+                                                                <span class="label bg-c-green value-badges"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0"></h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class=""></i>@ViewBag.AdminCount</h4>
+                                                                <p class="m-b-0">Toplam Admin Sayısı</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Monthly Earnings</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class=""></i>@ViewBag.BranchCount</h4>
+                                                                <p class="m-b-0">Toplam Branş Sayısı</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
+                    </body>

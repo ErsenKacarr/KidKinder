@@ -1,0 +1,67 @@
+﻿@model KidKinder.Entities.Contact
+
+@{
+    ViewBag.Title = "CreateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Yeni İletişim Girişi</h5>
+                                <span>İletişim ile ilgili verileri eksiksiz olarak doldurunuz!</span>
+                            </div>
+                            <div class="card-block">
+                                <form method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Ad Soyad</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="NameSurname" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">EMail</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Konu</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Subject" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Mesaj İçeriği</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Message" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Tarih</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="SendDate" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Onaylıyor Musunuz</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="IsRead" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">Özelliği Kaydet</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

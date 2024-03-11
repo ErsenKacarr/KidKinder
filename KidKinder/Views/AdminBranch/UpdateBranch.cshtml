@@ -1,0 +1,43 @@
+﻿@model KidKinder.Entities.Branch
+
+@{
+    ViewBag.Title = "UpdateBranch";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Yeni Sınıf Girişi</h5>
+                                <span>Sınıf ile ilgili verileri eksiksiz olarak doldurunuz.</span>
+                            </div>
+                            <div class="card-block">
+                                <form method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Branş Id</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.BranchId, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Branşın Adı</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-warning">Sınıf Bilgilerini Güncelle</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

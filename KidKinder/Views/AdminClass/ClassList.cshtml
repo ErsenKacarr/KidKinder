@@ -1,0 +1,60 @@
+﻿@model List<KidKinder.Entities.ClassRoom>
+@{
+    ViewBag.Title = "ClassList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">   
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Sınıf Listesi Tablosu</h5>
+                        <span>Sınıflar ile ilgili işlemleri yapabileceğiniz alandır.</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+
+                                        <th>Sınıf Adı</th>
+                                        <th>Sınıf Bilgisi</th>
+                                        <th>Saat Aralığı</th>
+                                        <th>Ücret</th>
+                                        <th>Sil</th>
+                                        <th>Güncelle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.ClassTime</td>
+                                            <td>@item.Price</td>
+                                            <td><a href="/AdminClass/DeleteClassRoom/@item.ClassRoomId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminClass/UpdateClassRoom/@item.ClassRoomId" class="btn btn-success">Güncelle</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a href="/AdminClass/CreateClassRoom/" class="btn btn-primary">Yeni Sınıf Oluştur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

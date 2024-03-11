@@ -1,0 +1,61 @@
+﻿@model List<KidKinder.Entities.About>
+
+@{
+    ViewBag.Title = "AboutList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Hakkımızda Listesi Tablosu</h5>
+                        <span>Hakkımızda ile ilgili işlemleri yapabileceğiniz alandır.</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th>Hakkımızda</th>
+                                        <th>Başlık</th>
+                                        <th>Açıklama</th>
+                                        <th>Sil</th>
+                                        <th>Güncelle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            
+                                            <td>@item.Header</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td><a href="/AdminAbout/DeleteAbout/@item.AboutId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminAbout/UpdateAbout/@item.AboutId" class="btn btn-success">Güncelle</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a href="/AdminAbout/CreateAbout/" class="btn btn-primary">Yeni Hakkımızda Oluştur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

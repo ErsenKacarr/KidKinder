@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+
+<body>
+    <!-- Navbar Start -->
+    @Html.Action("PartialNavbar", "Default")
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    @Html.Action("UITeacherHeaderPartial", "UITeacher")
+    <!-- Header End -->
+
+    <!-- Team Start -->
+    @Html.Action("PartialTeacher", "Default")
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    @Html.Action("PartialTestimonial", "Default")
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    @Html.Action("PartialFooter", "Default")
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+   @Html.Action("PartialScripts", "Default")
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
